@@ -49,13 +49,12 @@ function($stateProvider, $urlRouterProvider) {
 	$stateProvider
     .state('home', {
 		url: '/home',
-		templateUrl: '/home.html',
+		templateUrl: 'templates/home.html',
 		controller: 'MainCtrl'
-    });
-	$stateProvider
+    })
 	.state('posts', {
 		url: '/posts/{id}',
-		templateUrl: '/posts.html',
+		templateUrl: 'templates/posts.html',
 		controller: 'PostsCtrl'
 	});
 
